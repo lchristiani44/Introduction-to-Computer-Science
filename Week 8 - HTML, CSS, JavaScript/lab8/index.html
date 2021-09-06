@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelectorAll("form").addEventListener("submit", function() {
+                    let answer = document.getElementById("answer").value;
+                    if (answer == "Bottas")
+                    {
+                        answer.style.backgroundColor = "green";
+                        document.write("Correct!");
+                    }
+                    else
+                    {
+                        answer.style.backgroundColor = "red";
+                        answer.innerHTML ="Incorrect.";
+                    }
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+
+                <h3>
+                    How is the Spielberg International Circuit called?
+                </h3>
+
+                <form onsubmit="check_choice(); return false;"> <!-- The value of onsubmit is JS code. We call the function called check_choice. -->
+                    <button id="Hungaroring" onclick="document.getElementById('Hungaroring').style.backgroundColor = 'red'">Hungaroring</button>
+                    <button id="Red Bull Ring" onclick="document.getElementById('Red Bull Ring').style.backgroundColor = 'green'">Red Bull Ring</button>
+                    <button id="Spa Francorchamps" onclick="document.getElementById('Spa Francorchamps').style.backgroundColor = 'red'">Spa Francorchamps</button>
+                    <button id="Interlagos" onclick="document.getElementById('Interlagos').style.backgroundColor = 'red'">Interlagos</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+                <h3>
+                    Who is the finn driver (last name only) racing for Mercedes in 2021?
+                </h3>
+
+                <form> <!-- onsubmit="check_answer(); return false;" -->
+                    <input id="answer" autocomplete="off" type="text" placeholder="Type your answer!">
+                    <input type="submit" value="Check answer">
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

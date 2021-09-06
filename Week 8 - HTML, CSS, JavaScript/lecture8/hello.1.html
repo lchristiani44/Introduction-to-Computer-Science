@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector("#name").value;
+                alert("hello, " + name);
+            }
+
+            function listen()
+            {
+                document.querySelector("form").addEventListener("submit", greet); /* CALL THE greet FUNCTION WHEN THE submit EVENT OCCURS*/
+            }
+
+            document.addEventListener("DOMContentLoaded", listen); /* when the hole tree has benn loadead, go ahead and call the listen function */
+
+        </script>
+        <title>
+            hello, title
+        </title>
+    </head>
+    <body>
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="Tell me your name" type="text">
+            <input type="submit" value="Say Hi! to me">
+        </form>
+    </body>
+</html>

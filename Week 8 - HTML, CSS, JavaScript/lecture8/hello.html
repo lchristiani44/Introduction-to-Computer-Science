@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            function greet() /* this is how we define a function in JS */
+            {
+                let name = document.querySelector("#name").value /* function to select any html element */
+                alert("hello, " + name) /* single or double quotes; be consistent! */
+            }
+        </script>
+        <title>
+            hello, title
+        </title>
+    </head>
+    <body>
+        <form onsubmit="greet(); return false;"> <! call the greet function but not submit the form >
+            <input autocomplete="off" autofocus id="name" placeholder="Tell me your name" type="text">
+            <input type="submit" value="Say Hi! to me">
+        </form>
+    </body>
+</html>
