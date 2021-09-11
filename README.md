@@ -22,4 +22,3 @@ Lecture notes, labs & pset solutions
 <p>
 - CS50's YouTube Channel > https://www.youtube.com/c/cs50
 </p>
-
