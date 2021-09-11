@@ -16,5 +16,9 @@ Lecture notes, labs & pset solutions
 
 ### Links
 
+<p>
 > [Course on edX](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?index=product&queryID=e46c15ae6ba57a5f5c168706c263f97d&position=1)
+</p>
+<p>
 > [CS50's YouTube Channel](https://www.youtube.com/c/cs50)
+</p>
